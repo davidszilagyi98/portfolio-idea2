@@ -5,50 +5,55 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    role: "Senior Frontend Engineer",
-    company: "Linear",
-    period: "2023 — Present",
-    description: "Leading performance optimization initiatives and building core product features. Reduced initial load time by 40% and improved Core Web Vitals scores.",
+    role: "Web & E-commerce Specialist",
+    company: "Buildgreener",
+    location: "UK",
+    period: "2024 Feb — 2026 April",
+    description: "Managed and optimized a Shopify-based e-commerce store with 600+ products. Maintained product data, categories, and merchandising to ensure an effective customer journey.",
     highlights: [
-      "Architected real-time collaboration features",
-      "Led design system evolution",
-      "Mentored 4 junior engineers",
-    ],
-    current: true,
-  },
-  {
-    role: "Frontend Engineer",
-    company: "Vercel",
-    period: "2021 — 2023",
-    description: "Contributed to Next.js documentation site and internal tooling. Built interactive demos and improved developer onboarding experience.",
-    highlights: [
-      "Shipped 50+ documentation improvements",
-      "Built internal analytics dashboard",
-      "Contributed to Next.js core",
+      "Analyzed webshop performance, customer behavior, and KPIs to support commercial decisions",
+      "Supported promotions, campaigns, and online sales initiatives",
+      "Monitored market trends and competitors while collaborating with cross-functional teams",
     ],
     current: false,
   },
   {
-    role: "Software Engineer",
-    company: "Stripe",
-    period: "2019 — 2021",
-    description: "Built and maintained checkout experiences and payment flows. Focused on accessibility and internationalization.",
+    role: "Web Developer & Digital Marketing Consultant",
+    company: "Kooka",
+    location: "UK",
+    period: "2024 Feb — 2026 April",
+    description: "Developed and maintained the company website using WordPress. Improved the website structure, performance, and user experience. Assisted with digital marketing strategies to improve online presence.",
     highlights: [
-      "Improved checkout conversion by 15%",
-      "Implemented 20+ locale support",
-      "WCAG 2.1 AA compliance lead",
+      "Improved website structure, performance, and user experience",
+      "Assisted with digital marketing strategies to improve online presence",
+      "Optimized website content and functionality",
     ],
     current: false,
   },
   {
-    role: "Junior Developer",
-    company: "Agency",
-    period: "2017 — 2019",
-    description: "Started my journey building web applications for clients across various industries. Gained full-stack experience with React and Node.js.",
+    role: "Frontend Developer Intern",
+    company: "DynamicWeb",
+    location: "Aarhus, Denmark",
+    period: "2023 Aug — 2024 Jan",
+    description: "Developed frontend components using C#, JavaScript, .NET and Bootstrap. Participated in Agile Scrum development processes and collaborated with Product Managers, Designers and Developers.",
     highlights: [
-      "Delivered 30+ client projects",
-      "Full-stack JavaScript development",
-      "Agile team collaboration",
+      "Worked with Azure DevOps, code reviews and sprint planning",
+      "Contributed to e-commerce platform development and bug fixing",
+      "Improved user experience and platform functionality",
+    ],
+    current: false,
+  },
+  {
+    role: "Manager",
+    company: "Fratelli",
+    location: "Aarhus, Denmark",
+    period: "2018 Aug — 2023 Aug",
+    description: "Achieved to reduce expenses and increased the sales which helped the company to be able to reinvest the revenue into the business. Responsible for a team containing 25 members.",
+    highlights: [
+      "Reduced expenses and increased sales, enabling reinvestment",
+      "Responsible for a team containing 25 members",
+      "Training and hiring new people",
+      "Managed situations from both business and employee perspectives",
     ],
     current: false,
   },
@@ -79,7 +84,7 @@ export function Experience() {
             Experience
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            A track record of delivering impactful products at world-class companies.
+            A track record of delivering impactful digital solutions across e-commerce, web development, and team management.
           </p>
         </motion.div>
 
@@ -128,7 +133,7 @@ export function Experience() {
                     <div className="flex items-start justify-between gap-4 mb-4">
                       <div>
                         <h3 className="text-lg font-semibold">{exp.role}</h3>
-                        <p className="text-primary text-sm font-medium mt-0.5">{exp.company}</p>
+                        <p className="text-primary text-sm font-medium mt-0.5">{exp.company} | {exp.location}</p>
                       </div>
                       {exp.current && (
                         <span className="px-2.5 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20">

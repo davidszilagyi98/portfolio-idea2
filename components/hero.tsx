@@ -61,11 +61,11 @@ export function Hero() {
           className="space-y-4"
         >
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-none">
-            <span className="text-gradient-subtle">Product Engineer</span>
+            <span className="text-gradient-subtle">Web Developer</span>
             <br />
-            <span className="text-gradient">Crafting Digital</span>
+            <span className="text-gradient">& Digital Product</span>
             <br />
-            <span className="text-gradient-subtle">Experiences</span>
+            <span className="text-gradient-subtle">Specialist</span>
           </h1>
         </motion.div>
 
@@ -76,8 +76,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
         >
-          I&apos;m Alex Chen, a senior frontend engineer passionate about building
-          performant, accessible, and beautiful web applications that users love.
+          I&apos;m David Szilagyi, a web developer with a background in digital product development,
+          UX design, and e-commerce. I build and optimize digital solutions with a strong focus
+          on user experience, customer journeys, and online business performance.
         </motion.p>
 
         {/* CTA buttons */}
@@ -117,7 +118,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-16 flex flex-wrap items-center justify-center gap-6 text-muted-foreground/50"
         >
-          {["React", "TypeScript", "Next.js", "Node.js"].map((tech, i) => (
+          {["React", "Next.js", "WordPress", "Shopify", "C#/.NET"].map((tech, i) => (
             <motion.span
               key={tech}
               initial={{ opacity: 0, y: 10 }}

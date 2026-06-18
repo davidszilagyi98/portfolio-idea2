@@ -2,13 +2,13 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Github, Linkedin, Twitter, ArrowUpRight, Check } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, ArrowUpRight, Check, Phone, MapPin } from "lucide-react";
 
 const links = [
   { name: "GitHub", href: "https://github.com", icon: Github },
   { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
   { name: "Twitter", href: "https://twitter.com", icon: Twitter },
-  { name: "Email", href: "mailto:hello@alexchen.dev", icon: Mail },
+  { name: "Email", href: "mailto:szilagyidavid98@gmail.com", icon: Mail },
 ];
 
 export function Contact() {
@@ -45,7 +45,7 @@ export function Contact() {
             Get in Touch
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            I&apos;m currently open for new opportunities. Whether you have a project in mind or just want to chat, feel free to reach out.
+            I'm currently open for new opportunities. Whether you have a project in mind or just want to chat, feel free to reach out.
           </p>
         </motion.div>
 
@@ -77,7 +77,7 @@ export function Contact() {
                     </div>
                     <div className="flex-1">
                       <p className="font-medium text-sm">{link.name}</p>
-                      <p className="text-xs text-muted-foreground">@alexchen</p>
+                      <p className="text-xs text-muted-foreground">@dszilagyi</p>
                     </div>
                     <ArrowUpRight className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
                   </motion.a>
@@ -85,16 +85,21 @@ export function Contact() {
               })}
             </div>
 
-            {/* Location */}
+            {/* Contact details */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-6 p-4 rounded-xl glass-card"
+              className="mt-6 space-y-3"
             >
-              <p className="text-xs text-muted-foreground mb-1">Based in</p>
-              <p className="font-medium">San Francisco, CA</p>
-              <p className="text-sm text-muted-foreground mt-1">PST (UTC-8)</p>
+              <div className="flex items-center gap-3 p-3 rounded-xl glass-card">
+                <Phone className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm">+36 70 776 71 70</span>
+              </div>
+              <div className="flex items-center gap-3 p-3 rounded-xl glass-card">
+                <MapPin className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm">Budapest, Hungary</span>
+              </div>
             </motion.div>
           </motion.div>
 
@@ -115,7 +120,7 @@ export function Contact() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Message Sent</h3>
                 <p className="text-muted-foreground text-sm">
-                  Thanks for reaching out. I&apos;ll get back to you soon.
+                  Thanks for reaching out. I'll get back to you soon.
                 </p>
               </motion.div>
             ) : (

@@ -7,7 +7,7 @@ const socials = [
   { name: "GitHub", href: "https://github.com", icon: Github },
   { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
   { name: "Twitter", href: "https://twitter.com", icon: Twitter },
-  { name: "Email", href: "mailto:hello@alexchen.dev", icon: Mail },
+  { name: "Email", href: "mailto:szilagyidavid98@gmail.com", icon: Mail },
 ];
 
 export function Footer() {
@@ -24,7 +24,7 @@ export function Footer() {
               className="text-lg font-semibold tracking-tight"
               whileHover={{ scale: 1.05 }}
             >
-              alex<span className="text-primary">.</span>
+              david<span className="text-primary">.</span>
             </motion.a>
             <p className="text-sm text-muted-foreground">
               {year} All rights reserved

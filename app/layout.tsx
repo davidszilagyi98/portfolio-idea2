@@ -10,17 +10,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Alex Chen | Senior Frontend Engineer',
-  description: 'Senior Frontend Engineer at Linear. Building delightful web experiences with React, TypeScript, and modern web technologies.',
+  title: 'David Szilagyi | Web Developer & Digital Product Specialist',
+  description: 'Web developer with a background in digital product development, UX design, and e-commerce. Building effective and user-friendly digital solutions.',
   openGraph: {
-    title: 'Alex Chen | Senior Frontend Engineer',
-    description: 'Senior Frontend Engineer building delightful web experiences.',
+    title: 'David Szilagyi | Web Developer & Digital Product Specialist',
+    description: 'Web developer building effective and user-friendly digital solutions.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alex Chen | Senior Frontend Engineer',
-    description: 'Senior Frontend Engineer building delightful web experiences.',
+    title: 'David Szilagyi | Web Developer & Digital Product Specialist',
+    description: 'Web developer building effective and user-friendly digital solutions.',
   },
 };
 

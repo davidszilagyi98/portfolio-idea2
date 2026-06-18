@@ -2,61 +2,61 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, ArrowUpRight, Layers, Zap, Palette, Database } from "lucide-react";
+import { ExternalLink, ArrowUpRight, ShoppingCart, Globe, Code, Database, Palette, Smartphone } from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    title: "Linear Clone",
-    description: "A pixel-perfect clone of Linear's issue tracking interface with real-time sync, drag-and-drop, and smooth animations.",
-    image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["Next.js", "TypeScript", "Prisma"],
+    title: "Shopify E-commerce Store",
+    description: "Managed and optimized a Shopify-based e-commerce store with 600+ products. Improved product data organization, customer journey flow, and merchandising effectiveness.",
+    image: "https://images.pexels.com/photos/2305445/pexels-photo-2305445.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Shopify", "E-commerce", "Analytics"],
     link: "#",
     size: "large",
-    icon: Layers,
-    metrics: { users: "12K+", stars: "3.2K" },
+    icon: ShoppingCart,
+    metrics: { products: "600+", growth: "+15%" },
   },
   {
     id: 2,
-    title: "Design System",
-    description: "Component library with 80+ accessible React components, dark mode support, and comprehensive docs.",
+    title: "WordPress Company Website",
+    description: "Developed and maintained a company website using WordPress. Improved website structure, performance, and user experience with digital marketing integration.",
     image: "https://images.pexels.com/photos/1779129/pexels-photo-1779129.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["React", "Storybook", "Tailwind"],
+    tags: ["WordPress", "SEO", "Performance"],
     link: "#",
     size: "medium",
-    icon: Palette,
-    metrics: { components: "80+", downloads: "50K" },
+    icon: Globe,
+    metrics: { pages: "20+", speed: "<2s" },
   },
   {
     id: 3,
-    title: "Real-time Dashboard",
-    description: "Analytics dashboard with live data visualization, custom charts, and WebSocket streaming.",
-    image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["React", "D3.js", "WebSocket"],
+    title: "Frontend Component System",
+    description: "Developed reusable frontend components using C#, JavaScript, .NET and Bootstrap within an Agile Scrum environment. Contributed to e-commerce platform development.",
+    image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["C#", ".NET", "Bootstrap"],
     link: "#",
     size: "medium",
-    icon: Zap,
-    metrics: { latency: "<50ms", data: "1M+ rows" },
+    icon: Code,
+    metrics: { components: "30+", reviews: "50+" },
   },
   {
     id: 4,
-    title: "E-commerce Platform",
-    description: "Full-stack marketplace with Stripe integration, inventory management, and admin dashboard.",
-    image: "https://images.pexels.com/photos/2305445/pexels-photo-2305445.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
+    title: "UX Design System",
+    description: "Created user-centered interface designs and responsive web solutions as part of Multimedia Design studies. Focused on user research, prototyping, and usability testing.",
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Figma", "Adobe XD", "Prototyping"],
     link: "#",
     size: "small",
-    icon: Database,
+    icon: Palette,
   },
   {
     id: 5,
-    title: "CLI Toolkit",
-    description: "Developer tools for project scaffolding, code generation, and deployment automation.",
-    image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["Node.js", "CLI", "Open Source"],
+    title: "Digital Marketing Dashboard",
+    description: "Analyzed webshop performance, customer behavior, and KPIs to support commercial decisions. Monitored market trends and competitor activities.",
+    image: "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Analytics", "KPI", "Marketing"],
     link: "#",
     size: "small",
-    icon: Zap,
+    icon: Database,
   },
 ];
 
@@ -82,11 +82,10 @@ export function Projects() {
             Featured Work
           </span>
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-gradient-subtle">
-
             Projects
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            A selection of projects showcasing my expertise in building scalable, user-centric applications.
+            A selection of projects showcasing expertise in e-commerce, web development, and digital product optimization.
           </p>
         </motion.div>
 
@@ -130,7 +129,7 @@ export function Projects() {
                   </div>
 
                   {/* Arrow */}
-                  <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-muted flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <ArrowUpRight className="w-4 h-4" />
                   </div>
 

@@ -8,6 +8,7 @@ import { ThemeToggle } from "./theme-toggle";
 const navLinks = [
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -44,7 +45,7 @@ export function Navbar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              alex<span className="text-primary">.</span>
+              david<span className="text-primary">.</span>
             </motion.a>
 
             {/* Desktop nav */}
